@@ -1,0 +1,13 @@
+.employees-container {
+    border-left : 1px solid gray;
+    border-right : 1px solid gray;
+}
+
+.employees-search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Directory-table {
+    margin-top: 20px;
+}

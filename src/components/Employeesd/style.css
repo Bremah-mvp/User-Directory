@@ -1,13 +1,13 @@
-.Employees-container {
+.Employeesd-container {
     border-left : 1px solid gray;
     border-right : 1px solid gray;
 }
 
-.Employees-search {
+.Employeesd-search {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.Employees-table {
+.Employeesd-table {
     margin-top: 20px;
 }

@@ -12,7 +12,7 @@ import "./style.css";
 
 
 
-class Directory extends Component<{}, {
+class Employeesd extends Component<{}, {
     employees: Employee[];
     loadedEmployees: Employee[];
     search: string;
@@ -92,12 +92,12 @@ class Directory extends Component<{}, {
 
     render() {
         return (
-            <div className="Directory-container">
+            <div className="Employeesd-container">
                 <Header />
-                <Grid className="Directory-search" container justify="center">
+                <Grid className="Employeesd-search" container justify="center">
                     <Search handleInputChange={this.handleInputChange} />
                 </Grid>
-                <Grid className="Directory-table">
+                <Grid className="Employeesd-table">
                     <EmployeeTable employees={this.state.employees} handleSort={this.handleSort} orderBy={this.state.orderBy} order={this.state.order} />
                 </Grid>
             </div>
@@ -106,4 +106,4 @@ class Directory extends Component<{}, {
 
 }
 
-export default Directory;
+export default Employeesd;

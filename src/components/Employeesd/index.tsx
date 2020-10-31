@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Grid from '@material-ui/core/Grid';
 import Header from "../Header";
 import Search from "../Search";
-import { API } from "../../utils/API";
+import { api } from "../../utils/api";
 import { util } from "../../utils/utils";
 import Employee from "../../interfaces/Employee";
 import EmployeeTable from "../EmployeeTable";
@@ -28,9 +28,9 @@ class Employeesd extends Component<{}, {
         order: Order.ASC
     }
 
-    // Get employees from API and store required fields in employees state
+    
     componentDidMount() {
-        API.getEmployees()
+        api.getEmployees()
             .then(response => {
                 let empData: Employee[] = response.data.results.map((emp: any) => {
                     return ({
@@ -54,7 +54,7 @@ class Employeesd extends Component<{}, {
             .catch(err => console.log(err));
     };
 
-    // function to sort table by a given column
+    
     handleSort = (column: keyof Employee, order: Order) => {
         let sorted = [...this.state.employees].sort(util.compareValues(column, order));
         let newOrder = order === Order.ASC ? Order.DESC : Order.ASC
@@ -65,16 +65,15 @@ class Employeesd extends Component<{}, {
         });
     }
 
-    // handle search input - filter table when user inputs characters into search
+    
     handleInputChange = (event: React.FormEvent<HTMLInputElement>) => {
-        // Getting the value of the search input which triggered the change
+        
         const { value } = event.currentTarget;
 
-        // Updating the search input's state
         this.setState({
             search: value
         }, () => {
-            // filter the employee list
+            
             if (this.state.search) {
                 let filteredEmps = util.searchEmp(this.state.search, this.state.loadedEmployees);
                 this.setState({

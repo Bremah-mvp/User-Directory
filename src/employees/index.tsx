@@ -28,7 +28,7 @@ class Directory extends Component<{}, {
         order: Order.ASC
     }
 
-    // Get employees from API and store required fields in employees state
+    
     componentDidMount() {
         API.getEmployees()
             .then(response => {
@@ -54,7 +54,7 @@ class Directory extends Component<{}, {
             .catch(err => console.log(err));
     };
 
-    // function to sort table by a given column
+  
     handleSort = (column: keyof Employee, order: Order) => {
         let sorted = [...this.state.employees].sort(util.compareValues(column, order));
         let newOrder = order === Order.ASC ? Order.DESC : Order.ASC
@@ -65,16 +65,16 @@ class Directory extends Component<{}, {
         });
     }
 
-    // handle search input - filter table when user inputs characters into search
+    
     handleInputChange = (event: React.FormEvent<HTMLInputElement>) => {
-        // Getting the value of the search input which triggered the change
+        
         const { value } = event.currentTarget;
 
-        // Updating the search input's state
+        
         this.setState({
             search: value
         }, () => {
-            // filter the employee list
+            
             if (this.state.search) {
                 let filteredEmps = util.searchEmp(this.state.search, this.state.loadedEmployees);
                 this.setState({

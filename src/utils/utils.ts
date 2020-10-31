@@ -2,7 +2,7 @@ import Employee from "../interfaces/Employee";
 
 const util = {
 
-    // search employee array for matches in first, last, email, phone, city, state
+    
     searchEmp: (value: string, empArr: Employee[]) => {
         let filteredEmps = empArr.filter((emp) => {
             return emp.firstName.toLowerCase().includes(value.toLowerCase()) ||
@@ -15,11 +15,11 @@ const util = {
         return filteredEmps;
     },
 
-    // object sorting function from https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/
+    
     compareValues: (key: keyof Employee, order = 'asc') => {
         return function innerSort(a: Employee, b: Employee) {
             if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
-                // property doesn't exist on either object
+                
                 return 0;
             }
 

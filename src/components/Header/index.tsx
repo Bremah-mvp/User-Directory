@@ -10,9 +10,9 @@ function Header() {
     return (
         <>
             <Grid className="Header-heading" container justify="center">
-                <Typography variant="h2" align="center">Employee Directory</Typography>
+                <Typography variant="h2" align="center"><i className="fas fa-user-friends"></i>COMPANY DIRECTORY</Typography>
                 <Grid className="Header-instructions" container justify="center">
-                    <Typography align="center">Click the headings to sort or search to filter results. </Typography>
+                    <Typography align="center">Search by first or last name or select a column heading to sort. </Typography>
                 </Grid>
             </Grid>
 

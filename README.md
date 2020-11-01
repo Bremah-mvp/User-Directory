@@ -70,10 +70,10 @@ You will also see any lint errors in the console.
 Builds the app for production to the build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-License
+                         License
 
 This repository is licensed under the MIT license.
 
-Questions
+                          Questions
 
 Questions about this repository? Please contact me at mvpbremah@gmail.com. View more of my work in GitHub at Bremah-mvp...

@@ -1,8 +1,8 @@
 .Header-heading {
-    background-color: rgb(122, 144, 153);
+    background-color: blue;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-bottom: 4px solid rgb(54, 54, 54);
+    border-bottom: 4px solid black;
     margin-bottom: 20px;
 
 }

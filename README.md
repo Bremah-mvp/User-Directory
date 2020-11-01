@@ -1,21 +1,29 @@
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
-                                       User Directory
+  USER DIRECTORY APPLICATION                                 
 
                                      Table of Contents
 -Description
+
 -Deployed Link
+
 -Screenshots
+
 -Technologies
+
 -Installation
+
 -Usage
+
 -License
+
 -Questions
 
                                        Description
 User Directory application enables a user or company manager to view the employees data or personal information. The user can categorise the employees by first name, last name, gender, email address, phone number, city or state. User can also filter Employees on those same fields by entering text into the search field.
 
 User Story
+
 AS A user I  want quick access to all the employees information or personal data.
 
 
@@ -24,9 +32,9 @@ https://bremah-mvp.github.io/User-Directory/
 
 Screenshots 
 
-![picture]()
+![picture](https://github.com/Bremah-mvp/User-Directory/blob/main/public/Screenshot%202020-11-01%20122024.png)
 
-![picture]()
+![picture](https://github.com/Bremah-mvp/User-Directory/blob/main/public/Screenshot%202.png)
 
 
 

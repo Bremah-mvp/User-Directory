@@ -1,9 +1,10 @@
 .Header-heading {
-    background-color: blue;
+    background-color: red;
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom: 4px solid black;
     margin-bottom: 20px;
+    color: white;
 
 }
 
